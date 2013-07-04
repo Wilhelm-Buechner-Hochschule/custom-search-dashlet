@@ -1,16 +1,19 @@
-Site Blog dashlet for Alfresco Share
-====================================
+Site Custom Search Dashlet for Alfresco Share
+=============================================
 
-Author: Will Abson
+This add-on project for Alfresco Share defines a simple dashlet which allows
+to set a search query template which can be used by all other users of the
+Site. The magic value "$q" is replaced by the search term the user enters.
 
-This add-on project for Alfresco Share defines a simple dashlet to display 
-the last ten blog posts from the site.
+For example, setting "$q AND TAG:cc" will set a template, and if the user
+enters "Foo" as search term, the actual query "Foo AND TAG:cc" will be
+executed.
 
 Installation
 ------------
 
 The dashlet has been developed to install on top of an existing Alfresco
-3.3 installation.
+4.0 installation.
 
 An Ant build script is provided to build a JAR file containing the 
 custom files, which can then be installed into the 'tomcat/shared/lib' folder 
